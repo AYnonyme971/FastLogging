@@ -1,0 +1,31 @@
+{
+  "name": "fastlogging",
+  "version": "1.0.0",
+  "description": "A new way to console.log your things, can help your projetcs to log faster and better!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AYnonyme971/FastLogging.git"
+  },
+  "keywords": [
+    "console",
+    "console-utils",
+    "log",
+    "console-log",
+    "logging",
+    "faster",
+    "better"
+  ],
+  "author": "AYnonyme",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AYnonyme971/FastLogger/issues"
+  },
+  "homepage": "https://github.com/AYnonyme971/FastLogger#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}
