@@ -35,13 +35,13 @@ class FastLog {
   }
   log(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.log(
+      console.error(
         'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     if (typeof times != "number") {
-      console.log(
+      console.error(
         'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
       );
       process.exit(1);
@@ -66,20 +66,20 @@ class FastLog {
   }
   info(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.log(
+      console.error(
         'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     if (typeof times != "number") {
-      console.log(
+      console.error(
         'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
-        console.log(
+        console.info(
           `${i + 1}. `.white +
             `${
               this.timestamp == true
@@ -88,7 +88,7 @@ class FastLog {
             }`.blue
         );
       } else {
-        console.log(
+        console.info(
           `${
             this.timestamp == true
               ? "[" + this.getDate() + "]" + " " + message
@@ -100,20 +100,20 @@ class FastLog {
   }
   warn(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.log(
+      console.error(
         'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     if (typeof times != "number") {
-      console.log(
+      console.error(
         'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
-        console.log(
+        console.warn(
           `${i + 1}. `.white +
             `${
               this.timestamp == true
@@ -122,7 +122,7 @@ class FastLog {
             }`.yellow
         );
       } else {
-        console.log(
+        console.warn(
           `${
             this.timestamp == true
               ? "[" + this.getDate() + "]" + " " + message
@@ -134,20 +134,20 @@ class FastLog {
   }
   error(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.log(
+      console.error(
         'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     if (typeof times != "number") {
-      console.log(
+      console.error(
         'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
-        console.log(
+        console.error(
           `${i + 1}. `.white +
             `${
               this.timestamp == true
@@ -156,7 +156,7 @@ class FastLog {
             }`.red
         );
       } else {
-        console.log(
+        console.error(
           `${
             this.timestamp == true
               ? "[" + this.getDate() + "]" + " " + message
@@ -168,20 +168,20 @@ class FastLog {
   }
   debug(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.log(
+      console.error(
         'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     if (typeof times != "number") {
-      console.log(
+      console.error(
         'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
-        console.log(
+        console.debug(
           `${i + 1}. `.white +
             `${
               this.timestamp == true
@@ -190,7 +190,7 @@ class FastLog {
             }`.italic
         );
       } else {
-        console.log(
+        console.debug(
           `${
             this.timestamp == true
               ? "[" + this.getDate() + "]" + " " + message
@@ -202,13 +202,13 @@ class FastLog {
   }
   success(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.log(
+      console.error(
         'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
       );
       process.exit(1);
     }
     if (typeof times != "number") {
-      console.log(
+      console.error(
         'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
       );
       process.exit(1);
