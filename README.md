@@ -2,7 +2,7 @@
 
 [![version](https://img.shields.io/npm/v/fastlogging.svg)](https://www.npmjs.org/package/fastlogging)
 
-FastLogger is, like its name, a new way to log your messages more easier and faster. Here is how to use it
+FastLogging is, like its name, a new way to log your messages more easier and faster. Here is how to use it
 
 ## Usage
 
