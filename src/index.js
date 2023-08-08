@@ -35,16 +35,12 @@ class FastLog {
   }
   log(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.error(
-        'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
+      throw new TypeError(
+        'Le type de "message" n\'est pas un string ou un nombre !'
       );
-      process.exit(1);
     }
     if (typeof times != "number") {
-      console.error(
-        'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
-      );
-      process.exit(1);
+      throw new TypeError('Le type de "times" n\'est pas un nombre !');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -66,16 +62,12 @@ class FastLog {
   }
   info(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.error(
-        'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
+      throw new TypeError(
+        'Le type de "message" n\'est pas un string ou un nombre !'
       );
-      process.exit(1);
     }
     if (typeof times != "number") {
-      console.error(
-        'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
-      );
-      process.exit(1);
+      throw new TypeError('Le type de "times" n\'est pas un nombre !');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -100,16 +92,12 @@ class FastLog {
   }
   warn(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.error(
-        'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
+      throw new TypeError(
+        'Le type de "message" n\'est pas un string ou un nombre !'
       );
-      process.exit(1);
     }
     if (typeof times != "number") {
-      console.error(
-        'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
-      );
-      process.exit(1);
+      throw new TypeError('Le type de "times" n\'est pas un nombre !');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -134,16 +122,12 @@ class FastLog {
   }
   error(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.error(
-        'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
+      throw new TypeError(
+        'Le type de "message" n\'est pas un string ou un nombre !'
       );
-      process.exit(1);
     }
     if (typeof times != "number") {
-      console.error(
-        'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
-      );
-      process.exit(1);
+      throw new TypeError('Le type de "times" n\'est pas un nombre !');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -168,16 +152,12 @@ class FastLog {
   }
   debug(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.error(
-        'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
+      throw new TypeError(
+        'Le type de "message" n\'est pas un string ou un nombre !'
       );
-      process.exit(1);
     }
     if (typeof times != "number") {
-      console.error(
-        'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
-      );
-      process.exit(1);
+      throw new TypeError('Le type de "times" n\'est pas un nombre !');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -202,16 +182,12 @@ class FastLog {
   }
   success(message, times = 1, returnTimes = false) {
     if (typeof message != "string" && typeof message != "number") {
-      console.error(
-        'Le type de "message" n\'est pas un string ou un nombre !\nArrêt du processus'
+      throw new TypeError(
+        'Le type de "message" n\'est pas un string ou un nombre !'
       );
-      process.exit(1);
     }
     if (typeof times != "number") {
-      console.error(
-        'Le type de "times" n\'est pas un nombre !\nArrêt du processus'
-      );
-      process.exit(1);
+      throw new TypeError('Le type de "times" n\'est pas un nombre !');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
