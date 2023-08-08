@@ -1,4 +1,4 @@
-# FastLogger ⚡
+# FastLogging ⚡
 
 [![version](https://img.shields.io/npm/v/fastlogging.svg)](https://www.npmjs.org/package/fastlogging)
 
