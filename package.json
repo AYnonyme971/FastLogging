@@ -1,6 +1,6 @@
 {
   "name": "fastlogging",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A new way to console.log your things, can help your projetcs to log faster and better!",
   "main": "src/index.js",
   "scripts": {
