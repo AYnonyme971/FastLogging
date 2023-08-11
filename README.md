@@ -4,6 +4,8 @@
 
 FastLogging is, like its name, a new way to log your messages more easier and faster. Here is how to use it
 
+[CHANGELOG](./CHANGELOG.md)
+
 ## Usage
 
 Install it first:

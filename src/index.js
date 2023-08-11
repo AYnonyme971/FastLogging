@@ -3,10 +3,7 @@ require("colors");
 class FastLog {
   constructor(timestamp = false, complete = false) {
     if (typeof timestamp != "boolean") {
-      console.log(
-        'Le type de "timestamp" n\'est pas un boolean !\nArrêt du processus'
-      );
-      process.exit(1);
+      return new TypeError('"timestamp" parameter is not a boolean!');
     }
     this.timestamp = timestamp;
     this.completeTimestamp = complete;
@@ -34,13 +31,11 @@ class FastLog {
     }
   }
   log(message, times = 1, returnTimes = false) {
-    if (typeof message != "string" && typeof message != "number") {
-      throw new TypeError(
-        'Le type de "message" n\'est pas un string ou un nombre !'
-      );
-    }
     if (typeof times != "number") {
-      throw new TypeError('Le type de "times" n\'est pas un nombre !');
+      throw new TypeError('"times" parameter is not a number!');
+    }
+    if (typeof returnTimes != "boolean") {
+      throw new TypeError('"returnTimes" paramter is not a boolean!');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -61,13 +56,11 @@ class FastLog {
     }
   }
   info(message, times = 1, returnTimes = false) {
-    if (typeof message != "string" && typeof message != "number") {
-      throw new TypeError(
-        'Le type de "message" n\'est pas un string ou un nombre !'
-      );
-    }
     if (typeof times != "number") {
-      throw new TypeError('Le type de "times" n\'est pas un nombre !');
+      throw new TypeError('"times" parameter is not a number!');
+    }
+    if (typeof returnTimes != "boolean") {
+      throw new TypeError('"returnTimes" paramter is not a boolean!');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -91,13 +84,11 @@ class FastLog {
     }
   }
   warn(message, times = 1, returnTimes = false) {
-    if (typeof message != "string" && typeof message != "number") {
-      throw new TypeError(
-        'Le type de "message" n\'est pas un string ou un nombre !'
-      );
-    }
     if (typeof times != "number") {
-      throw new TypeError('Le type de "times" n\'est pas un nombre !');
+      throw new TypeError('"times" parameter is not a number!');
+    }
+    if (typeof returnTimes != "boolean") {
+      throw new TypeError('"returnTimes" paramter is not a boolean!');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -121,13 +112,11 @@ class FastLog {
     }
   }
   error(message, times = 1, returnTimes = false) {
-    if (typeof message != "string" && typeof message != "number") {
-      throw new TypeError(
-        'Le type de "message" n\'est pas un string ou un nombre !'
-      );
-    }
     if (typeof times != "number") {
-      throw new TypeError('Le type de "times" n\'est pas un nombre !');
+      throw new TypeError('"time" parameter is not a number!');
+    }
+    if (typeof returnTimes != "boolean") {
+      throw new TypeError('"returnTimes" paramter is not a boolean!');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -151,13 +140,11 @@ class FastLog {
     }
   }
   debug(message, times = 1, returnTimes = false) {
-    if (typeof message != "string" && typeof message != "number") {
-      throw new TypeError(
-        'Le type de "message" n\'est pas un string ou un nombre !'
-      );
-    }
     if (typeof times != "number") {
-      throw new TypeError('Le type de "times" n\'est pas un nombre !');
+      throw new TypeError('"times" parameter must be a number!');
+    }
+    if (typeof returnTimes != "boolean") {
+      throw new TypeError('"returnTimes" paramter is not a boolean!');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
@@ -181,13 +168,11 @@ class FastLog {
     }
   }
   success(message, times = 1, returnTimes = false) {
-    if (typeof message != "string" && typeof message != "number") {
-      throw new TypeError(
-        'Le type de "message" n\'est pas un string ou un nombre !'
-      );
-    }
     if (typeof times != "number") {
-      throw new TypeError('Le type de "times" n\'est pas un nombre !');
+      throw new TypeError('"times" paramter is not a number!');
+    }
+    if (typeof returnTimes != "boolean") {
+      throw new TypeError('"returnTimes" paramter is not a boolean!');
     }
     for (let i = 0; i < times; i++) {
       if (returnTimes) {
