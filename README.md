@@ -37,6 +37,6 @@ npm link fastlogging
 npm test
 ```
 
-Go on our <a href="https://github.com/AYnonyme971/FastLogger">GitHub</a> and make a pull request!
-<br>Have a problem? Create an <a href="https://github.com/AYnonyme971/FastLogger/issues">issue</a> on GitHub
+Go on our <a href="https://github.com/AYnonyme971/FastLogging">GitHub</a> and make a pull request!
+<br>Have a problem? Create an <a href="https://github.com/AYnonyme971/FastLogging/issues">issue</a> on GitHub
 <br>An idea? DM <a href="https://discord.com/users/">me</a> on Discord!
